@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- BOOSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- BOOSTRAP ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- TITLE -->
+    <title>Portofolio | Pandi</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary m-0 p-0">
+        <div class="container-fluid bg-info fixed-top">
+          <a class="navbar-brand fw-bold text-light ms-5 my-3" href="#"
+            >Pandhi</a
+          >
+          <button
+            class="navbar-toggler me-3 m-4"
+            type="button"
+            data-bs-theme="dark"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-light"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav text-light ms-auto">
+              <a class="nav-link active text-light" aria-current="page" href="#"
+                >Home</a
+              >
+              <a class="nav-link text-light" href="#about">About</a>
+              <a class="nav-link text-light" href="#project">Project</a>
+              <a class="nav-link text-light" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- akhir navbar -->
+
+    <!-- Home -->
+    <section id="home">
+      <div class="jumbotron jumbotron-fluid bg-primary-subtle text-dark">
+        <div class="container text-center mt-10">
+          <img
+            src="image/pandi.jpg"
+            class="img-fluid border border-white"
+            alt="Moh. Sahril Apandi"
+          />
+          <h1 class="display-4">Moh. Sahril Apandi</h1>
+          <p class="lead my-3 w-50 mx-auto">
+            Saya adalah seorang mahasiswa Ilmu Komputer di Universitas Qamarul
+            Huda Badaruddin Bagu. Saya memiliki keahlian dalam pengembangan
+            front-end web.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Home -->
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="header pt-4 my-5">
+        <h1 class="text-center pb-0 h2 mt-5  pt-5">ABOUT ME</h1>
+      </div>
+      <div class="container text-center mb-5">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 mb-4">
+            <p>
+              Saya merupakan mahasiswa Ilmu Komputer di Universitas Qamarul Huda
+              Badaruddin Bagu yang memiliki ketertarikan pada pengembangan
+              front-end web. Saya menguasai HTML, CSS, dan Bootstrap untuk
+              membuat tampilan website yang responsif dan enak dilihat. Saya
+              senang mengubah desain menjadi website yang siap digunakan serta
+              terus mengembangkan kemampuan melalui latihan dan proyek
+              sederhana.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 mb-4">
+            <p>
+              Ke depannya, saya memiliki tujuan untuk berkembang menjadi seorang
+              web developer fullstack. Saya ingin memperluas kemampuan tidak
+              hanya pada sisi tampilan, tetapi juga pada pengelolaan logika
+              aplikasi dan sistem di sisi server. Dengan terus belajar dan
+              mencoba berbagai teknologi, saya berharap dapat membangun aplikasi
+              web yang utuh, fungsional, dan bermanfaat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- AKHIR ABOUT -->
+
+    <!-- PROJECT -->
+
+    <section id="project" class="bg-primary-subtle">
+      <div class="header pt-4 my-4">
+        <h1 class="text-center pt-5 pb-5 h2 mt-5">MY PROJECT</h1>
+      </div>
+      <div class="container text-center mb-0 pb-5">
+        <div class="row pb-5">
+          <div class="col-10 m-auto">
+            <div class="card">
+              <img src="image/project1.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">
+                  Project ini adalah sebuah website artikel sederhana yang buat
+                  pada saat latihan menggunakan HTML dan CSS dasar. Silahkan
+                  klik tombol di bawah untuk melihat project ini secara lengkap.
+                </p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AKHIR PROJECT -->
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+      <div class="container ">
+        <div class="row text-center pt-5 my-5">
+          <div class="col pt-5 my-5">
+            <h2>CONTACT ME</h2>
+          </div>
+          <div class="row justify-content-center mt-4 mb-5 text-start">
+            <div class="col-md-8">
+              <form>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama Lengkap</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    aria-describedby="name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="pesan" class="form-label">Pesan</label>
+                  <textarea class="form-control" id="pesan" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary px-4 fw-bold">
+                  Kirim
+                </button>
+              </form>
+              <div class="col pt-4 mt-4 mb-1 text-center">
+                <h5>OR</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center fs-1 gap-5 mb-5 mt-1">
+          <a class="text-gradient" href="https://wa.me/+6282251274775" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          <a class="text-gradient" href="https://www.instagram.com/_veerrbb/#" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a class="text-gradient" href="mailto:dediuniqhba@gmail.com"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AKHIR CONTACT -->
+
+    <!-- FOOTER -->
+
+    <footer id="footer" class="bg-info text-light">
+      <div class="container text-center bg-info text-light py-3">
+        <p class="mb-0">
+          ©
+          <a
+            href="https://www.instagram.com/_veerrbb/#"
+            class="text-light"
+            target="_blank"
+            >2024 Moh. Sahril Apandi.</a
+          >
+          All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- AKHIR FOOTER -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
