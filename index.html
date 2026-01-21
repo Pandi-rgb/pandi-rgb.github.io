@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -141,7 +141,6 @@
                   class="btn btn-primary"
                   >View Project</a
                 >
-                >>>>>>> 934a6eb (tambah tab)
               </div>
             </div>
           </div>
@@ -153,22 +152,35 @@
 
     <!-- CONTACT -->
 
-    <section id="contact">
+    <section id="contact" name="contact">
       <div class="container">
-        <div class="row text-center pt-5 my-5">
-          <div class="col pt-5 my-5">
+        <div class="row text-center pt-5">
+          <div class="col pt-5 mt-5">
             <h2>CONTACT ME</h2>
           </div>
-          <div class="row justify-content-center mt-4 mb-5 text-start">
+          <div class="row justify-content-center mt-4 mb-4 text-start">
             <div class="col-md-8">
-              <form>
+              <form name="contact-form">
                 <div class="mb-3">
+                  <div
+                    class="alert alert-success alert-dismissible fade show d-none"
+                    role="alert"
+                  >
+                    <strong>Terima Kasih!</strong> Pesan Anda telah terkirim.
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
                   <label for="email" class="form-label">Email</label>
                   <input
                     type="email"
                     class="form-control"
                     id="email"
                     aria-describedby="email"
+                    name="email"
                   />
                 </div>
                 <div class="mb-3">
@@ -178,14 +190,34 @@
                     class="form-control"
                     id="name"
                     aria-describedby="name"
+                    name="nama"
                   />
                 </div>
                 <div class="mb-3">
                   <label for="pesan" class="form-label">Pesan</label>
-                  <textarea class="form-control" id="pesan" rows="4"></textarea>
+                  <textarea
+                    class="form-control"
+                    id="pesan"
+                    rows="4"
+                    name="pesan"
+                  ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary px-4 fw-bold">
+                <button
+                  type="submit"
+                  class="btn btn-kirim btn-primary px-4 fw-bold"
+                >
                   Kirim
+                </button>
+                <button
+                  class="btn btn-primary btn-loading d-none"
+                  type="button"
+                  disabled
+                >
+                  <span
+                    class="spinner-border spinner-border-sm"
+                    aria-hidden="true"
+                  ></span>
+                  <span role="status">Loading...</span>
                 </button>
               </form>
               <div class="col pt-4 mt-4 mb-1 text-center">
@@ -194,7 +226,7 @@
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-center fs-1 gap-5 mb-5 mt-1">
+        <div class="d-flex justify-content-center fs-1 gap-5 mb-5 mt-0">
           <a
             class="text-gradient"
             href="https://wa.me/+6282251274775"
@@ -233,6 +265,11 @@
       </div>
     </footer>
     <!-- AKHIR FOOTER -->
+
+    <!-- Tempan link file javasript -->
+      <script src="logic.js"></script>
+      
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
