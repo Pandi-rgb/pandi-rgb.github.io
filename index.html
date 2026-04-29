@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pandhi - Personal Profile</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body class="bg-slate-50 text-slate-800 font-sans antialiased">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50 transition-all duration-300"
+      id="navbar"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="#home" class="text-2xl font-bold text-primary tracking-tight"
+            >Pandhi</a
+          >
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="nav-link text-slate-600 hover:text-primary font-medium transition-colors"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="nav-link text-slate-600 hover:text-primary font-medium transition-colors"
+              >About</a
+            >
+            <a
+              href="#projects"
+              class="nav-link text-slate-600 hover:text-primary font-medium transition-colors"
+              >Projects</a
+            >
+            <a
+              href="#certificates"
+              class="nav-link text-slate-600 hover:text-primary font-medium transition-colors"
+              >Certificates</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-slate-600 hover:text-primary font-medium transition-colors"
+              >Contact Me</a
+            >
+          </div>
+          <!-- Mobile Hamburger -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-slate-600 hover:text-primary focus:outline-none"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-slate-100"
+      >
+        <div class="px-4 pt-2 pb-4 space-y-1">
+          <a
+            href="#home"
+            class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-slate-50"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-slate-50"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-slate-50"
+            >Projects</a
+          >
+          <a
+            href="#certificates"
+            class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-slate-50"
+            >Certificates</a
+          >
+          <a
+            href="#contact"
+            class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-slate-50"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center pt-16 bg-linear-to-br from-slate-50 via-blue-50 to-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="flex flex-col-reverse lg:flex-row items-center gap-12">
+          <div class="flex-1 text-center lg:text-left scroll-reveal">
+            <p class="text-secondary font-semibold mb-2 text-lg">Halo, Saya</p>
+            <h1
+              class="text-4xl md:text-6xl font-extrabold text-dark mb-6 leading-tight"
+            >
+              Moh. Sahril <span class="text-primary">Apandi</span>
+            </h1>
+            <p
+              class="text-lg text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+            >
+              Mahasiswa yang sedang mendalami Web Programming. Saya memiliki
+              minat besar dalam pengembangan web modern dan selalu bersemangat
+              mempelajari teknologi baru.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center px-8 py-3 bg-primary text-white rounded-full font-semibold shadow-lg hover:bg-blue-800 hover:shadow-xl transition-all transform hover:-translate-y-1"
+              >
+                Hubungi Saya
+              </a>
+              <a
+                href="#projects"
+                class="inline-flex items-center justify-center px-8 py-3 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all"
+              >
+                Lihat Project
+              </a>
+            </div>
+          </div>
+          <div class="flex-1 flex justify-center scroll-reveal">
+            <div class="relative">
+              <div
+                class="absolute inset-0 bg-primary/10 rounded-full blur-3xl transform scale-110"
+              ></div>
+              <img
+                src="assets/pandi.jpg"
+                alt="Profile Picture"
+                class="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 scroll-reveal">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+            Tentang <span class="text-primary">Saya</span>
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+          <div class="flex-1 scroll-reveal">
+            <img
+              src="assets/pandi.jpg"
+              alt="About Me"
+              class="rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover"
+            />
+          </div>
+          <div class="flex-1 scroll-reveal">
+            <h3 class="text-2xl font-bold text-dark mb-4">
+              Web Developer Enthusiast
+            </h3>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+              Saya adalah Mahasiswa yang sedang belajar Web Programming. Saya
+              memiliki minat yang besar dalam pengembangan web dan selalu
+              bersemangat untuk belajar hal-hal baru di dunia teknologi.
+            </p>
+            <p class="text-slate-600 mb-8 leading-relaxed">
+              Fokus saya saat ini adalah membangun website yang responsif,
+              interaktif, dan memiliki performa tinggi menggunakan teknologi
+              modern seperti HTML, CSS, JavaScript, dan TailwindCSS.
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+              <div
+                class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center"
+              >
+                <span class="block text-3xl font-bold text-primary">3+</span>
+                <span class="text-sm text-slate-500">Project Selesai</span>
+              </div>
+              <div
+                class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center"
+              >
+                <span class="block text-3xl font-bold text-primary">0+</span>
+                <span class="text-sm text-slate-500">Sertifikat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 scroll-reveal">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+            Project <span class="text-primary">Saya</span>
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto rounded-full mb-4"></div>
+          <p class="text-slate-600 max-w-2xl mx-auto">
+            Berikut adalah beberapa project latihan yang telah saya buat.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 scroll-reveal border border-slate-100"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-blue-500 to-primary flex items-center justify-center"
+            >
+              <i class="fas fa-globe text-6xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-2">
+                Website Portfolio
+              </h3>
+              <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                Website profil pribadi sederhana dengan menggunakan Boostrap.
+              </p>
+              <button
+                onclick="
+                  openProjectModal('Website Portfolio', [
+                    {
+                      name: 'Portfolio Bootstrap',
+                      desc: 'Website profil pribadi menggunakan HTML, CSS, JavaScript, dan Bootstrap',
+                      target: '_blank',
+                      link: 'https://github.com/Pandi-rgb/portofolio1',
+                    },
+                    // {
+                    // name: 'Portfolio Tailwind',
+                    //   desc: 'Website profil pribadi menggunakan TailwindCSS',
+                    //   link: 'https://github.com/pandi-rgb/portfolio-tailwind',
+                    // },
+                    // {
+                    //   name: 'Portfolio React',
+                    //   desc: 'Website profil pribadi menggunakan React.js',
+                    //   link: 'https://github.com/pandi-rgb/portfolio-react',
+                    // },
+                  ])
+                "
+                class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors cursor-pointer"
+              >
+                <i class="fas fa-info-circle mr-2"></i> Lihat Project
+              </button>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <!-- <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 scroll-reveal border border-slate-100"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center"
+            >
+              <i class="fas fa-shopping-cart text-6xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-2">E-Commerce App</h3>
+              <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                Aplikasi e-commerce sederhana dengan fitur keranjang belanja dan
+                checkout.
+              </p>
+              <button
+                onclick="openProjectModal('Project Artikel', [
+                  { name: 'Artikel Blog Sederhana', desc: 'Website blog dengan HTML & CSS murni', link: 'https://github.com/pandi-rgb/artikel-blog' },
+                  { name: 'Artikel CMS', desc: 'Content Management System untuk artikel dengan PHP', link: 'https://github.com/pandi-rgb/artikel-cms' },
+                  { name: 'Artikel API', desc: 'REST API untuk manajemen artikel dengan Node.js', link: 'https://github.com/pandi-rgb/artikel-api' }
+                ])"
+                class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors cursor-pointer"
+              >
+                <i class="fas fa-info-circle mr-2"></i> Lihat Project
+              </button>
+            </div>
+          </div> -->
+          <!-- Project 3 -->
+          <!-- <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 scroll-reveal border border-slate-100"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center"
+            >
+              <i class="fas fa-tasks text-6xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-2">Task Manager</h3>
+              <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                Aplikasi manajemen tugas dengan fitur CRUD dan penyimpanan local
+                storage.
+              </p>
+              <button
+                onclick="openProjectModal('Project Artikel', [
+                  { name: 'Artikel Blog Sederhana', desc: 'Website blog dengan HTML & CSS murni', link: 'https://github.com/pandi-rgb/artikel-blog' },
+                  { name: 'Artikel CMS', desc: 'Content Management System untuk artikel dengan PHP', link: 'https://github.com/pandi-rgb/artikel-cms' },
+                  { name: 'Artikel API', desc: 'REST API untuk manajemen artikel dengan Node.js', link: 'https://github.com/pandi-rgb/artikel-api' }
+                ])"
+                class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors cursor-pointer"
+              >
+                <i class="fas fa-info-circle mr-2"></i> Lihat Project
+              </button>
+            </div>
+          </div> -->
+          <!-- Project 4 -->
+          <!-- <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 scroll-reveal border border-slate-100"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center"
+            >
+              <i class="fas fa-cloud-sun text-6xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-2">
+                Weather Dashboard
+              </h3>
+              <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                Dashboard cuaca real-time menggunakan API OpenWeatherMap.
+              </p>
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors"
+              >
+                <i class="fas fa-external-link-alt mr-2"></i> Lihat Project
+              </a>
+            </div>
+          </div> -->
+          <!-- Project 5 -->
+          <!-- <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 scroll-reveal border border-slate-100"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center"
+            >
+              <i class="fas fa-calculator text-6xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-2">Calculator App</h3>
+              <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                Kalkulator interaktif dengan desain modern dan fitur history
+                perhitungan.
+              </p>
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors"
+              >
+                <i class="fas fa-external-link-alt mr-2"></i> Lihat Project
+              </a>
+            </div>
+          </div> -->
+          <!-- Project 6 -->
+          <!-- <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 scroll-reveal border border-slate-100"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-pink-400 to-rose-600 flex items-center justify-center"
+            >
+              <i class="fas fa-music text-6xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-2">Music Player</h3>
+              <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                Pemutar musik berbasis web dengan playlist dan kontrol volume.
+              </p>
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors"
+              >
+                <i class="fas fa-external-link-alt mr-2"></i> Lihat Project
+              </a>
+            </div>
+          </div> -->
+          <!-- Project 7 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 scroll-reveal border border-slate-100"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-teal-400 to-cyan-600 flex items-center justify-center"
+            >
+              <i class="fas fa-newspaper text-6xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-2">Project Artikel</h3>
+              <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                Sebuah project latihan sederhana untuk menampilkan artikel
+                dengan desain yang bersih dan responsif.
+              </p>
+              <button
+                onclick="
+                  openProjectModal('Project Artikel', [
+                    {
+                      name: 'Artikel Blog Sederhana',
+                      desc: 'Website blog dengan HTML & CSS murni',
+                      link: 'https://github.com/Pandi-rgb/project',
+                    },
+                    // {
+                    //   name: 'Artikel CMS',
+                    //   desc: 'Content Management System untuk artikel dengan PHP',
+                    //   link: 'https://github.com/pandi-rgb/artikel-cms',
+                    // },
+                    // {
+                    //   name: 'Artikel API',
+                    //   desc: 'REST API untuk manajemen artikel dengan Node.js',
+                    //   link: 'https://github.com/pandi-rgb/artikel-api',
+                    // },
+                  ])
+                "
+                class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors cursor-pointer"
+              >
+                <i class="fas fa-info-circle mr-2"></i> Lihat Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 scroll-reveal">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+            Sertifikat <span class="text-primary">Saya</span>
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto rounded-full mb-4"></div>
+          <p class="text-slate-600 max-w-2xl mx-auto">
+            Saat ini belum ada sertifikat.
+          </p>
+        </div>
+        <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> -->
+        <!-- Certificate 1 -->
+        <!-- <div
+            class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 scroll-reveal border border-slate-100"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center"
+            >
+              <i class="fas fa-award text-6xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-2">
+                Web Development Fundamentals
+              </h3>
+              <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                Sertifikat kelulusan kursus dasar pengembangan web dari platform
+                online.
+              </p>
+              <button
+                onclick="
+                  openModal(
+                    'Web Development Fundamentals',
+                    'Sertifikat ini diberikan setelah menyelesaikan kursus fundamental web development yang mencakup HTML, CSS, dan JavaScript dasar. Kursus berlangsung selama 6 minggu dengan total 40 jam pembelajaran.',
+                    '2023',
+                  )
+                "
+                class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors cursor-pointer"
+              >
+                <i class="fas fa-info-circle mr-2"></i> Lihat Detail
+              </button>
+            </div>
+          </div> -->
+        <!-- Certificate 2 -->
+        <!-- <div
+            class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 scroll-reveal border border-slate-100"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-green-400 to-teal-600 flex items-center justify-center"
+            >
+              <i class="fas fa-certificate text-6xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-2">
+                JavaScript Advanced
+              </h3>
+              <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                Sertifikat kelulusan kursus JavaScript lanjutan dan framework
+                modern.
+              </p>
+              <button
+                onclick="
+                  openModal(
+                    'JavaScript Advanced',
+                    'Sertifikat ini diberikan setelah menyelesaikan kursus JavaScript lanjutan yang mencakup ES6+, asynchronous programming, DOM manipulation, dan pengenalan framework seperti React dan Vue.',
+                    '2024',
+                  )
+                "
+                class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors cursor-pointer"
+              >
+                <i class="fas fa-info-circle mr-2"></i> Lihat Detail
+              </button>
+            </div>
+          </div> -->
+        <!-- Certificate 3 -->
+        <!-- <div
+            class="bg-slate-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 scroll-reveal border border-slate-100"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-indigo-400 to-purple-600 flex items-center justify-center"
+            >
+              <i class="fas fa-medal text-6xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-2">
+                UI/UX Design Basics
+              </h3>
+              <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                Sertifikat kelulusan kursus dasar desain antarmuka dan
+                pengalaman pengguna.
+              </p>
+              <button
+                onclick="
+                  openModal(
+                    'UI/UX Design Basics',
+                    'Sertifikat ini diberikan setelah menyelesaikan kursus UI/UX Design yang mencakup prinsip desain visual, wireframing, prototyping menggunakan Figma, dan user research dasar.',
+                    '2024',
+                  )
+                "
+                class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors cursor-pointer"
+              >
+                <i class="fas fa-info-circle mr-2"></i> Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 scroll-reveal">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+            Hubungi <span class="text-primary">Saya</span>
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto rounded-full mb-4"></div>
+          <p class="text-slate-600 max-w-2xl mx-auto">
+            Tertarik untuk berkolaborasi? Hubungi saya melalui media sosial
+            berikut.
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 scroll-reveal">
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/pandhi_1002"
+            target="_blank"
+            class="group flex flex-col items-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 border border-slate-100 w-32"
+          >
+            <div
+              class="w-14 h-14 bg-gradient-to-br from-yellow-600 via-red-500 to-purple-600 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"
+            >
+              <i class="fa-brands fa-instagram text-2xl text-white"></i>
+            </div>
+            <span class="font-semibold text-slate-700 text-sm">Instagram</span>
+          </a>
+          <!-- Whatsapp -->
+          <a
+            href="https://wa.me/6282251274775"
+            target="_blank"
+            class="group flex flex-col items-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 border border-slate-100 w-32"
+          >
+            <div
+              class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"
+            >
+              <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
+            </div>
+            <span class="font-semibold text-slate-700 text-sm">WhatsApp</span>
+          </a>
+          <!-- E-Mail -->
+          <a
+            href="mailto:mohsahrilapandi@gmail.com"
+            class="group flex flex-col items-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 border border-slate-100 w-32"
+          >
+            <div
+              class="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"
+            >
+              <i class="fas fa-envelope text-2xl text-white"></i>
+            </div>
+            <span class="font-semibold text-slate-700 text-sm">Email</span>
+          </a>
+          <!-- github -->
+          <a
+            href="https://github.com/pandi-rgb"
+            target="_blank"
+            class="group flex flex-col items-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 border border-slate-100 w-32"
+          >
+            <div
+              class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"
+            >
+              <i class="fa-brands fa-github text-2xl text-white"></i>
+            </div>
+            <span class="font-semibold text-slate-700 text-sm">GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-slate-300 py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-sm">&copy; 2026 Pandhi. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div
+      id="cert-modal"
+      class="fixed inset-0 z-100 hidden"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
+        onclick="closeModal()"
+      ></div>
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center p-4 text-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+          >
+            <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+              <div class="sm:flex sm:items-start">
+                <div
+                  class="mx-auto flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10"
+                >
+                  <i class="fas fa-certificate text-primary"></i>
+                </div>
+                <div
+                  class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full"
+                >
+                  <h3
+                    class="text-xl font-semibold leading-6 text-dark"
+                    id="modal-title"
+                  >
+                    Certificate Title
+                  </h3>
+                  <div class="mt-4">
+                    <p
+                      class="text-sm text-slate-600 leading-relaxed"
+                      id="modal-desc"
+                    >
+                      Description
+                    </p>
+                    <div
+                      class="mt-4 inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-primary text-xs font-semibold"
+                    >
+                      <i class="fas fa-calendar-alt mr-2"></i>
+                      <span id="modal-year">2026</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-slate-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
+            >
+              <button
+                type="button"
+                onclick="closeModal()"
+                class="inline-flex w-full justify-center rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 sm:ml-3 sm:w-auto transition-colors"
+              >
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div
+      id="project-modal"
+      class="fixed inset-0 z-100 hidden"
+      aria-labelledby="project-modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
+        onclick="closeProjectModal()"
+      ></div>
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center p-4 text-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-2xl"
+          >
+            <div class="bg-white px-4 pb-4 pt-5 sm:p-6">
+              <div class="sm:flex sm:items-start">
+                <div
+                  class="mx-auto flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10"
+                >
+                  <i class="fas fa-folder-open text-primary"></i>
+                </div>
+                <div
+                  class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full"
+                >
+                  <h3
+                    class="text-xl font-semibold leading-6 text-dark"
+                    id="project-modal-title"
+                  >
+                    Project Category
+                  </h3>
+                  <p class="text-sm text-slate-500 mt-1">
+                    Daftar project yang pernah dibuat:
+                  </p>
+                  <div
+                    id="project-modal-list"
+                    class="mt-4 grid grid-cols-1 gap-3"
+                  >
+                    <!-- Project items will be injected here -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-slate-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
+            >
+              <button
+                type="button"
+                onclick="closeProjectModal()"
+                class="inline-flex w-full justify-center rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 sm:ml-3 sm:w-auto transition-colors"
+              >
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
